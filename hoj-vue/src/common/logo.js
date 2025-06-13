@@ -5,12 +5,8 @@ export const LOGO =
 "         |  __  | |   | |  | | |  | |  __|     \n"+
 "         | |  | | |___| |__| | |__| | |____    \n"+
 "         |_|  |_|\_____\____/|_____/|______|   \n"+
-"              Hcode Online Judge(HOJ)"+"\n"+
-"                 @Author Himit_ZH"+"\n"+
-"                 @Last Update 20240703"+"\n"+
-"                QQ Group: 598587305"+"\n"+
-"    ->Github<- https://www.github.com/HimitZH/HOJ"+"\n"+
-"    ->Gitee<-  https://gitee.com/himitzh0730/hoj";
+"    ->Github<- wu"+"\n"+
+"    ->Gitee<-  wu";
 
 export const MOTTO = 
-"         Welcome to Use HOJ, Dream in Code!";
+"         Welcome to Use KJS_OJ, Dream in Code!";

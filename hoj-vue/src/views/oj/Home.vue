@@ -5,6 +5,7 @@
         :md="15"
         :sm="24"
       >
+        <!-- 原有的左侧内容保持不变 -->
         <el-card>
           <div
             slot="header"
@@ -13,6 +14,7 @@
             <span class="panel-title home-title welcome-title">{{ $t('m.Welcome_to')
               }}{{ websiteConfig.shortName }}</span>
           </div>
+          <!-- 轮播图等原有内容... -->
           <el-carousel
             :interval="interval"
             :height="srcHight"
@@ -40,6 +42,7 @@
         </el-card>
         <Announcements class="card-top"></Announcements>
         <SubmissionStatistic class="card-top"></SubmissionStatistic>
+        <!-- 原有的最新题目表格等其他内容保持不变... -->
         <el-card class="card-top">
           <div
             slot="header"
@@ -91,7 +94,6 @@
                 </el-tooltip>
               </template>
             </vxe-table-column>
-
           </vxe-table>
         </el-card>
       </el-col>
@@ -100,6 +102,10 @@
         :sm="24"
         class="phone-margin"
       >
+        <!-- 新增：每日一言和倒计时组件 -->
+        <DailyQuote />
+        
+        <!-- 原有的右侧内容保持不变 -->
         <template v-if="contests.length">
           <el-card>
             <div
@@ -110,6 +116,7 @@
                 <i class="el-icon-trophy"></i> {{ $t('m.Recent_Contest') }}
               </div>
             </div>
+            <!-- 原有的比赛卡片内容... -->
             <el-card
               shadow="hover"
               v-for="(contest, index) in contests"
@@ -168,8 +175,7 @@
                           ? $t(
                               'm.Based_on_The_Recent_Score_Submitted_Of_Each_Problem'
                             )
-                          : $t(
-                              'm.Based_on_The_Highest_Score_Submitted_For_Each_Problem'
+                          : $t(                              'm.Based_on_The_Highest_Score_Submitted_For_Each_Problem'
                             ))
                     "
                     placement="top"
@@ -239,6 +245,8 @@
             </el-card>
           </el-card>
         </template>
+        
+        <!-- 原有的最近7天AC排行榜 -->
         <el-card :class="contests.length ? 'card-top' : ''">
           <div
             slot="header"
@@ -309,6 +317,8 @@
             </vxe-table-column>
           </vxe-table>
         </el-card>
+        
+        <!-- 原有的支持的远程OJ -->
         <el-card class="card-top">
           <div
             slot="header"
@@ -371,12 +381,16 @@ import myMessage from "@/common/message";
 const Announcements = () => import("@/components/oj/common/Announcements.vue");
 const SubmissionStatistic = () =>
   import("@/components/oj/home/SubmissionStatistic.vue");
+// 新增：导入每日一言组件
+const DailyQuote = () => import("@/components/oj/common/DailyQuote.vue");
+
 export default {
   name: "home",
   components: {
     Announcements,
     SubmissionStatistic,
     Avatar,
+    DailyQuote, // 新增组件
   },
   data() {
     return {
@@ -551,6 +565,8 @@ export default {
   },
 };
 </script>
+
+<!-- 原有的样式保持不变 -->
 <style>
 .contest-card-running {
   border-color: rgb(25, 190, 107);
@@ -623,7 +639,7 @@ li {
 
 /deep/.contest-card-running .el-card__header {
   border-color: rgb(25, 190, 107);
-  background-color: rgba(94, 185, 94, 0.15);
+    background-color: rgba(94, 185, 94, 0.15);
 }
 .contest-card-running .contest-title {
   color: #5eb95e;
@@ -755,3 +771,5 @@ span.rank-tag {
   width: 100%;
 }
 </style>
+
+

@@ -24,7 +24,7 @@ export const m = {
   NavBar_Group: 'Group',
   NavBar_About: 'About',
   NavBar_Introduction: 'Introduction',
-  NavBar_Developer: 'Developer',
+  NavBar_Developer: 'Secondary developer',
   NavBar_Login: 'Login',
   NavBar_Register: 'Register',
   NavBar_UserHome: 'Home',
@@ -530,6 +530,7 @@ export const m = {
   Diversity_Desc: 'Support Codefoces, HDU, POJ, GYM, AtCoder, SPOJ remote judge',
   Available: 'Available',
   Faulty: 'Faulty',
+  Secondary_Developer: 'Secondary Developer',
 
   // /components/oj/common/Announcements.vue
   Contest_Announcement: 'Contest Announcement',
@@ -750,5 +751,10 @@ export const m = {
   Already_Public_Problem:'Already in the public problem bank',
   Applying_for_Publicity:'Applying for publicity',
   Group_Problem_Apply_Public_Tips:'Are you sure you want to apply for this problem to be added to the public bank?',
-  Cancel_Group_Problem_Apply_Public_Tips:'Do you want to cancel the application for this problem to be added to the public bank?'
+  Cancel_Group_Problem_Apply_Public_Tips:'Do you want to cancel the application for this problem to be added to the public bank?',
+
+  //每日一言
+  Daily_Quote: 'Daily Quote',
+  Refresh: 'Refresh',
+  Contest_Countdown: 'Contest Countdown',
 }

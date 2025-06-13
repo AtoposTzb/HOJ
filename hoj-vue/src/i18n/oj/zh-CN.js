@@ -24,7 +24,7 @@ export const m = {
   NavBar_Group: '团队',
   NavBar_About: '关于',
   NavBar_Introduction: '简介',
-  NavBar_Developer: '开发者',
+  NavBar_Developer: '二次开发者',
   NavBar_Login: '登录',
   NavBar_Register: '注册',
   NavBar_UserHome: '我的首页',
@@ -533,6 +533,7 @@ export const m = {
   Diversity_Desc: '支持Codefoces，HDU，POJ，GYM，AtCoder，SPOJ的远程判题',
   Available: '有效',
   Faulty: '不完善',
+  Secondary_Developer: '二次开发者',
 
   // /components/oj/common/Announcements.vue
   Contest_Announcement: '比赛公告',
@@ -753,5 +754,10 @@ export const m = {
   Already_Public_Problem:'已在公开题库中',
   Applying_for_Publicity:'申请公开中',
   Group_Problem_Apply_Public_Tips:'您是否确定要申请该题目加入公开题库？',
-  Cancel_Group_Problem_Apply_Public_Tips:'您是否要取消申请该题目加入公开题库？'
+  Cancel_Group_Problem_Apply_Public_Tips:'您是否要取消申请该题目加入公开题库？',
+
+  //组件
+  Daily_Quote: '每日一言',
+  Refresh: '刷新',
+  Contest_Countdown: '赛事倒计时',
 }

@@ -128,9 +128,13 @@ export default {
       } catch (error) {
         console.error('获取每日一言失败:', error)
         const defaultQuotes = [
-          { text: '今天也要加油刷题哦！', from: 'HOJ', author: '' },
-          { text: '每一道AC的题目都是进步的阶梯。', from: 'HOJ', author: '' },
-          { text: '算法之美，在于逻辑与创造的完美结合。', from: 'HOJ', author: '' }
+          { text: '今天也要加油刷题哦！', from: 'Yolo_T', author: '唐' },
+          { text: '每一道AC的题目都是进步的阶梯。', from: 'Yolo_T', author: '唐' },
+          { text: '算法之美，在于逻辑与创造的完美结合。', from: 'Yolo_T', author: '唐' },
+          { text: '九十九次的理论不如一次的行动来得实际。', from: 'Yolo_T', author: '唐' },
+          { text: '做决定之前仔细考虑，一旦作了决定就要勇往直前、坚持到底。', from: 'Yolo_T', author: '唐' },
+          { text: '预测未来的最好方法，就是创造未来。', from: 'Yolo_T', author: '' },
+          { text: '细节决定成功，点滴铸就辉煌。', from: 'Yolo_T', author: '唐' },
         ]
         const randomQuote = defaultQuotes[Math.floor(Math.random() * defaultQuotes.length)]
         this.quote = {
